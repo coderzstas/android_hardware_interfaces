@@ -42,11 +42,19 @@ cc_defaults {
         "libbase",
         "libdl",
         "libutils",
+        "libhwbinder",
         "libhardware",
         "libhidlbase",
         "libhidltransport",
         "android.hardware.light@2.0",
     ],
+    arch: {
+        arm: {
+            cflags: [
+                "-DARCH_ARM_32"
+            ],
+        },
+    },
 }
 
 cc_binary {

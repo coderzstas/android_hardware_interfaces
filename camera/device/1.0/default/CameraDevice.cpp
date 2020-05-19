@@ -428,6 +428,7 @@ void CameraDevice::sDataCb(int32_t msg_type, const camera_memory_t *data, unsign
              index, mem->mNumBufs);
         return;
     }
+
 #ifdef QTI_CAMERA_DEVICE
     if(object->mQDeviceCallback != nullptr) {
          vendor::qti::hardware::camera::device::V1_0::QCameraFrameMetadata hidlMetadata;

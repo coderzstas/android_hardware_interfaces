@@ -170,6 +170,7 @@ private:
     const SortedVector<std::pair<std::string, std::string>>& mCameraDeviceNames;
 
     sp<ICameraDeviceCallback> mDeviceCallback = nullptr;
+
 #ifdef QTI_CAMERA_DEVICE
     sp<IQCameraDeviceCallback> mQDeviceCallback = nullptr;
 #endif
